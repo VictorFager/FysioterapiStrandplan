@@ -1,0 +1,98 @@
+#kontakt {
+  background: rgba($color: $main-blue, $alpha: 0.8);
+  color: white;
+}
+
+#contact-content {
+  min-height: 60vh;
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0;
+  @include flex(row, stretch, flex-start);
+  flex-wrap: wrap;
+}
+
+#contact-column {
+  flex: 2 1 30rem;
+  padding: 3rem;
+
+  a {
+    color: white;
+  }
+
+  h3 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  li {
+    padding: 0.4rem 0;
+  }
+}
+
+#address-column {
+  flex: 2 1 30rem;
+  padding: 3rem;
+
+  h3 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  li {
+    padding: 0.4rem 0;
+  }
+
+  #building-image-container {
+    width: 80%;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#map-column {
+  flex: 3 1 40rem;
+  padding: 3rem;
+
+  h3 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+#map-container {
+  width: 80%;
+  min-height: 40rem;
+  margin: auto;
+
+  iframe {
+    width: 100%;
+    height: 40rem;
+  }
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}

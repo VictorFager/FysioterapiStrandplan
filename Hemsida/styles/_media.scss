@@ -1,0 +1,196 @@
+// Header Fix
+@media screen and (max-width: 1126px) {
+  #main-header {
+    nav {
+      @include flex(column, center, center);
+
+      #logo {
+        flex: initial;
+      }
+
+      #nav-links {
+        flex: initial;
+        margin-top: 1rem;
+        width: 100%;
+        @include flex(row, center, space-around);
+      }
+    }
+  }
+}
+
+// Treatment Column Fix
+@media screen and (max-width: 1000px) {
+  #behandling {
+    .treat-list-container {
+      justify-content: flex-start;
+
+      .treat-list {
+        width: 38rem;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// Hero Image Fix
+@media screen and (max-width: 952px) {
+  #hero {
+    background: linear-gradient(to top, rgba($text-gray, 0.3), transparent),
+      url("../images/sea-shortc.jpg");
+    background-position: top;
+    background-size: cover;
+
+    #hero-content {
+      width: 80%;
+      margin: auto;
+      @include flex(column, center, center);
+
+      h2 {
+        text-align: center;
+        color: white;
+        text-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.3);
+      }
+    }
+  }
+}
+
+// Width from 80 to 90
+@media screen and (max-width: 900px) {
+  #main-header {
+    nav {
+      width: 90%;
+    }
+  }
+
+  #hero {
+    #hero-content {
+      width: 90%;
+    }
+  }
+
+  #behandling,
+  #about-portraits,
+  #info,
+  #contact-content {
+    width: 90%;
+  }
+
+  footer {
+    h4 {
+      width: 90%;
+    }
+  }
+
+  #contact-column {
+    h3 {
+      width: 90%;
+    }
+
+    ul {
+      width: 90%;
+    }
+  }
+
+  #address-column {
+    h3 {
+      width: 90%;
+    }
+
+    ul {
+      width: 90%;
+    }
+
+    #building-image-container {
+      width: 90%;
+    }
+  }
+}
+
+// Map column by itself fix
+@media screen and (max-width: 1296px) {
+  #map-column {
+    h3 {
+      width: 95%;
+    }
+  }
+
+  #map-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  #map-column {
+    h3 {
+      width: 90%;
+    }
+  }
+
+  #map-container {
+    width: 90%;
+  }
+}
+
+// Mobile fixes
+@media screen and (max-width: 500px) {
+  // Header
+  #main-header {
+    nav {
+      #nav-links {
+        display: none;
+      }
+
+      #logo {
+        img {
+          height: 4rem;
+        }
+      }
+    }
+  }
+
+  #logo-text-fysio {
+    margin-left: 1rem;
+  }
+
+  #logo-text-strand {
+    margin-left: 0.5rem;
+  }
+
+  h1 {
+    font-size: $logo-text - 0.5rem;
+  }
+
+  // Treatment section
+  #behandling {
+    .treat-list-container {
+      .treat-list {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+
+  // Info Section
+  .info-text-column {
+    margin: 0 2rem;
+  }
+
+  // Text size
+  li,
+  p,
+  a {
+    font-size: $text + 0.2rem;
+  }
+
+  h4 {
+    font-size: $header4 + 0.2rem;
+  }
+
+  #kontakt {
+    li,
+    p,
+    a {
+      font-size: $text;
+    }
+  }
+}

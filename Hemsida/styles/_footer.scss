@@ -1,0 +1,13 @@
+footer {
+  min-height: 10vh;
+  background: rgba($color: $main-blue, $alpha: 0.8);
+  @include flex(row, center, flex-start);
+
+  h4 {
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+  }
+}
