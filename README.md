@@ -1,0 +1,1 @@
+Instruktioner för hur jag ska ladda upp hemsidan finns i google drive samt min obsidian vault.
